@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headache Flowchart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .box {
+            margin: 20px 0;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e7f3ff;
+            cursor: pointer;
+            text-align: center;
+        }
+        .box:hover {
+            background-color: #d0e7ff;
+            border-color: #b0d4ff;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Headache Chart</h1>
+        <h2>A Symptom-Based Approach</h2>
+
+        <!-- Start of Flowchart -->
+        <div class="box" onclick="alert('This leads to the first decision point.')">
+            Start: Do you have a headache?
+        </div>
+        <div class="arrow">↓</div>
+
+        <div class="box" onclick="alert('This leads to further diagnosis.')">
+            Is the pain severe and sudden?
+        </div>
+        <div class="arrow">↓</div>
+
+        <div class="box" onclick="alert('Continue the diagnosis process here.')">
+            Does it improve with rest?
+        </div>
+        <div class="arrow">↓</div>
+
+        <div class="box" onclick="alert('Proceed with appropriate treatment steps.')">
+            Consider consulting a specialist.
+        </div>
+        <!-- End of Flowchart -->
+
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="#">Learn more about headache management</a>
+        </p>
+    </div>
+</body>
+</html>
